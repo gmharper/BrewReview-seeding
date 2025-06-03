@@ -1,10 +1,158 @@
 export const breweriesData = [
     {
-        id: "dsalfdsa",
-        name: "wafdlhsdlj"
+        id: "heineken",
+        name: "Heineken",
+        location: "",
+        country: "Netherlands",
+        founded_date: "",
+        url: "https://www.heineken.co.uk",
+        img_url: "",
+        logo_url: "",
+        beers: ["heineken"],
+        followers: []
     },
     {
-        id: "dsjaklf",
-        name: "adlskfjsdkl"
-    }
+        id: "carlsberg",
+        name: "Carlsberg A/S",
+        location: "Copenhagen",
+        country: "Denmark",
+        founded_date: "1847",
+        url: "https://www.carlsberggroup.com",
+        img_url: "",
+        logo_url: "",
+        beers: ["carlsberg"],
+        followers: []
+    },
+    {
+        id: "stella_artois",
+        name: "Anheuser–Busch InBev",
+        location: "Leuven",
+        country: "Belgium",
+        founded_date: "1926",
+        url: "https://www.stellaartois.com",
+        img_url: "",
+        logo_url: "",
+        beers: ["stella_artois"],
+        followers: []
+    },
+    {
+        id: "fullers",
+        name: "Fuller's Brewery",
+        location: "London",
+        country: "England",
+        founded_date: "",
+        url: "https://www.fullers.co.uk/",
+        img_url: "",
+        logo_url: "",
+        beers: ["griffin_gold"],
+        followers: []
+    },
+    {
+        id: "adnams",
+        name: "Adnams Brewery",
+        location: "Southwold",
+        country: "England",
+        founded_date: "",
+        url: "https://www.adnams.co.uk/",
+        img_url: "",
+        logo_url: "",
+        beers: ["double_ghost"],
+        followers: []
+    },
+    {
+        id: "beavertown",
+        name: "Beavertown Brewery",
+        location: "London",
+        country: "England",
+        founded_date: "",
+        url: "https://www.beavertownbrewery.co.uk",
+        img_url: "",
+        logo_url: "",
+        beers: ["neck_oil"],
+        followers: []
+    },
+    {
+        id: "brewdog",
+        name: "BrewDog",
+        location: "Ellon",
+        country: "Scotland",
+        founded_date: "",
+        url: "https://www.brewdog.com",
+        img_url: "",
+        logo_url: "",
+        beers: ["punk_ipa"],
+        followers: []
+    },
+    {
+        id: "kernel",
+        name: "The Kernel Brewery",
+        location: "London",
+        country: "England",
+        founded_date: "",
+        url: "https://thekernelbrewery.com",
+        img_url: "",
+        logo_url: "",
+        beers: ["biere_de_saison"],
+        followers: []
+    },
+    {
+        id: "magic_rock",
+        name: "Magic Rock Brewery",
+        location: "Huddersfield",
+        country: "England",
+        founded_date: "",
+        url: "https://www.magicrockbrewing.com",
+        img_url: "",
+        logo_url: "",
+        beers: ["cannonball"],
+        followers: []
+    },
+    {
+        id: "tiny_rebel",
+        name: "Tiny Rebel Brewing Co.",
+        location: "Newport",
+        country: "Wales",
+        founded_date: "",
+        url: "https://tinyrebel.co.uk",
+        img_url: "",
+        logo_url: "",
+        beers: ["313_craft"],
+        followers: []
+    },
+    {
+        id: "harveys",
+        name: "Harvey's Brewery",
+        location: "Lewes",
+        country: "England",
+        founded_date: "",
+        url: "https://www.harveys.org.uk",
+        img_url: "",
+        logo_url: "",
+        beers: ["sussex_best"],
+        followers: []
+    },
+    {
+        id: "siren_craft",
+        name: "Siren Craft",
+        location: "Finchampstead",
+        country: "England",
+        founded_date: "",
+        url: "https://www.sirencraftbrew.com",
+        img_url: "",
+        logo_url: "",
+        beers: ["marshmallow_mountain"],
+        followers: []
+    },
+    {
+        id: "camden_town",
+        name: "Camden Town Brewery",
+        location: "London",
+        country: "England",
+        founded_date: "",
+        url: "https://www.camdentownbrewery.com",
+        img_url: "",
+        logo_url: "",
+        beers: ["hells"],
+        followers: []
+    },
 ]

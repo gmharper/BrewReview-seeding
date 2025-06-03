@@ -10,7 +10,7 @@ export const beersData = [
         percentage: 5,
         reviews: [],
         voted_by: [],
-        votes: 23
+        votes: 53
     },
     {
         id: "stella_artois",
@@ -23,7 +23,7 @@ export const beersData = [
         percentage: 5.2,
         reviews: [],
         voted_by: [],
-        votes: 7
+        votes: 78
     },
     {
         id: "carlsberg",
@@ -36,6 +36,135 @@ export const beersData = [
         percentage: 5,
         reviews: [],
         voted_by: [],
+        votes: 55
+    },
+    {
+        id: "punk_ipa",
+        name: "Punk IPA",
+        country: "Scotland",
+        category: "IPA",
+        brewery: "brewdog",
+        logo_url: "",
+        img_url: "",
+        percentage: 5.4,
+        reviews: [],
+        voted_by: [],
         votes: 23
-    }
+    },
+    {
+        id: "neck_oil",
+        name: "Neck Oil",
+        country: "England",
+        category: "IPA",
+        brewery: "beavertown",
+        logo_url: "",
+        img_url: "",
+        percentage: 4.3,
+        reviews: [],
+        voted_by: [],
+        votes: 23
+    },
+    {
+        id: "double_ghost",
+        name: "Double Ghost",
+        country: "England",
+        category: "IPA",
+        brewery: "adnams",
+        logo_url: "",
+        img_url: "",
+        percentage: 5.2,
+        reviews: [],
+        voted_by: [],
+        votes: 15
+    },
+    {   id: "griffin_gold",
+        name: "Griffin Gold",
+        country: "England",
+        category: "golden_ale",
+        brewery: "fullers",
+        logo_url: "",
+        img_url: "",
+        percentage: 3.4,
+        reviews: [],
+        voted_by: [],
+        votes: 2
+    },
+    {
+        id: "biere_de_saison",
+        name: "Bière de Saison",
+        country: "England",
+        category: "farmhouse_ale",
+        brewery: "kernel",
+        logo_url: "",
+        img_url: "",
+        percentage: 4.4,
+        reviews: [],
+        voted_by: [],
+        votes: 0
+    },
+    {
+        id: "cannonball",
+        name: "Cannonball",
+        country: "England",
+        category: "IPA",
+        brewery: "magic_rock",
+        logo_url: "",
+        img_url: "",
+        percentage: 7.4,
+        reviews: [],
+        voted_by: [],
+        votes: 43
+    },
+    {
+        id: "313_craft",
+        name: "313 Craft Lager",
+        country: "Wales",
+        category: "lager",
+        brewery: "tiny_rebel",
+        logo_url: "",
+        img_url: "",
+        percentage: 4.6,
+        reviews: [],
+        voted_by: [],
+        votes: 18
+    },
+    {
+        id: "sussex_best",
+        name: "Sussex Best",
+        country: "England",
+        category: "bitter",
+        brewery: "harveys",
+        logo_url: "",
+        img_url: "",
+        percentage: 4,
+        reviews: [],
+        voted_by: [],
+        votes: 5
+    },
+    {
+        id: "marshmallow_mountain",
+        name: "Marshmallow Mountain",
+        country: "England",
+        category: "porter",
+        brewery: "siren_craft",
+        logo_url: "",
+        img_url: "",
+        percentage: 5.1,
+        reviews: [],
+        voted_by: [],
+        votes: 6
+    },
+    {
+        id: "hells",
+        name: "Hells",
+        country: "England",
+        category: "lager",
+        brewery: "camden_town",
+        logo_url: "",
+        img_url: "",
+        percentage: 4.6,
+        reviews: [],
+        voted_by: [],
+        votes: 48
+    },
 ]

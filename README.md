@@ -1,9 +1,6 @@
 # BrewReview-seeding
 
 ### TESTING
-**NOTE: This is for testing purposes! when seeding a collection all documents in that collection are removed before seeding!**
-Don't do this if there are documents in the collection you want to keep that are not contained in the db/data data files!  
-Check if there are any documents currently in the firestore db that are not contained in the data files in db/data.  
 
 `git clone thisrepo`
 
@@ -17,14 +14,18 @@ Check if there are any documents currently in the firestore db that are not cont
 #### To seed a collection in the firestore database:
 
 `cd seed`  
-`node runseed.js type`  
+`node seed type`
+or
+`npm run seed-type`  
 *replace type with the collection_id you want to seed eg. beers*  
 
 -------------------------
 
 #### To delete all documents from a collection:
 `cd delete`  
-`node deleteData.js type`  
+`node delete type`
+or
+`npm run delete-type`
 *replace type with the collection_id you want to delete eg. beers*
 
 **NOTE: when the terminal hangs up after running a command the command likely worked, just control/command c and check the database to see if the data is there**

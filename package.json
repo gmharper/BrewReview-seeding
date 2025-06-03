@@ -3,16 +3,16 @@
     "firebase": "^11.8.1"
   },
   "scripts": {
-    "seed-beers": "node runseed.js beers",
-    "seed-breweries": "node runseed.js breweries",
-    "seed-categories": "node runseed.js categories",
-    "seed-reviews": "node runseed.js reviews",
-    "seed-users": "node runseed.js users",
-    "delete-beers": "node deleteData.js beers",
-    "delete-breweries": "node deleteData.js breweries",
-    "delete-categories": "node deleteData.js categories",
-    "delete-reviews": "node deleteData.js reviews",
-    "delete-users": "node deleteUsers.js users"
+    "seed-beers": "node ./db/seed/seed beers",
+    "seed-breweries": "node ./db/seed/seed breweries",
+    "seed-categories": "node ./db/seed/seed categories",
+    "seed-reviews": "node ./db/seed/seed reviews",
+    "seed-users": "node ./db/seed/seed users",
+    "delete-beers": "node ./db/delete/delete beers",
+    "delete-breweries": "node ./db/delete/delete breweries",
+    "delete-categories": "node ./db/delete/delete categories",
+    "delete-reviews": "node ./db/delete/delete reviews",
+    "delete-users": "node ./db/delete/delete users"
   },
   "type": "module"
 }
