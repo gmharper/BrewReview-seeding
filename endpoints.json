@@ -49,9 +49,19 @@
         },
         "users": {
             "example_object": {
-                "username": "",
-                "name": "",
-                "reviews": ["review_id", "review_id"]
+                "username": "angrycat472",
+                "name": "Brooke Cooper",
+                "email": "brooke.cooper@example.com",
+                "password": "elway7",
+                "phone": "051-767-4164",
+                "country": "Ireland",
+                "registered": "2008-01-20T01:47:13.315Z",
+                "avatar_img_url": "https://randomuser.me/api/portraits/women/39.jpg",
+                "reviews": ["review_id", "review_id"],
+                "favourite_beers": ["beer_id", "beer_id"],
+                "favourite_categories": ["category_id", "category_id"],
+                "followers": ["user_id", "user_id"],
+                "following": ["user_id", "user_id"]
             }
         }
     }

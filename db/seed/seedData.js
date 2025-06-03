@@ -28,7 +28,11 @@ export const seedData = (type) => {
         }
     
     (dataArray.forEach((data) => {
-        promiseArray.push(setDoc(doc(FIRESTORE_DB, type, data.id), 
+        let idType = "id"
+        if (type === "users") {
+            idType = "username"
+        }
+        promiseArray.push(setDoc(doc(FIRESTORE_DB, type, data[idType]), 
             {...data}) )
         })
     )
