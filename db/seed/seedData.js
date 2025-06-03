@@ -29,7 +29,7 @@ export const seedData = (type) => {
     
     (dataArray.forEach((data) => {
         promiseArray.push(setDoc(doc(FIRESTORE_DB, type, data.id), 
-            {...dataArray}) )
+            {...data}) )
         })
     )
     return Promise.all(promiseArray)
