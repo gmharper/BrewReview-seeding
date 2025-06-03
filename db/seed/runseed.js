@@ -3,15 +3,40 @@ import { seedData } from "./seedData.js";
 
 import { beersData, breweriesData, categoriesData, reviewsData, usersData } from "../data/index.js";
 
-async function runSeed () {
+export async function runSeed () {
+    let type = "beers"
+    if (process.argv[2]) {
+        type = process.argv[2]
+    }
+    
+    let obj = beersData
+
+    switch (process.argv[2]) {
+        case "beers":
+            obj = beersData
+            break
+        case "breweries":
+            obj = breweriesData
+            break
+        case "categories":
+            obj = categoriesData
+            break
+        case "reviews":
+            obj = reviewsData
+            break
+        case "users":
+            obj = usersData
+            break
+    }
+
    try {
-        await deleteData("beers")
+        await deleteData(type)
     }
     catch(err) {
         console.error(err)
     }
     finally {
-        seedData("beers", beersData) 
+        seedData(type, obj) 
     }
 }
 

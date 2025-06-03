@@ -1,28 +1,38 @@
 import { FIRESTORE_DB } from "../../firebaseconfig.js";
 import { collection, doc, getDocs, deleteDoc } from "firebase/firestore";
 
-let promiseArray = []
-export async function deleteData (type) {
-    const dataRef = collection(FIRESTORE_DB, `${type}`);
 
+export async function deleteData () {
+    let type = ""
+    if (process.argv[2]) {
+        type = process.argv[2]
+    }
     let example = ""
-    switch (type) {
+
+    switch (process.argv[2]) {
         case "beers":
+            type = "beers"
             example = "example_beer"
             break
         case "breweries":
+            type = "breweries"
             example = "example_brewery"
             break
         case "categories":
+            type = "categories"
             example = "example_category"
             break
         case "reviews":
+            type = "reviews"
             example = "example_review"
             break
         case "users":
+            type = "users"
             example = "example_user"
             break
     }
+
+    const dataRef = collection(FIRESTORE_DB, `${type}`);
 
     return getDocs(dataRef)
         .then((querySnapshot) => {
@@ -38,6 +48,7 @@ export async function deleteData (type) {
             return compiledData
         })
         .then((data) => {
+            let promiseArray = []
             data.map((item) => {
                 if (!(item.id === example)) {
                     promiseArray.push(deleteDoc(doc(FIRESTORE_DB, `${type}`, item.id)))

@@ -2,5 +2,17 @@
   "dependencies": {
     "firebase": "^11.8.1"
   },
+  "scripts": {
+    "seed-beers": "node runseed.js beers",
+    "seed-breweries": "node runseed.js breweries",
+    "seed-categories": "node runseed.js categories",
+    "seed-reviews": "node runseed.js reviews",
+    "seed-users": "node runseed.js users",
+    "delete-beers": "node deleteData.js beers",
+    "delete-breweries": "node deleteData.js breweries",
+    "delete-categories": "node deleteData.js categories",
+    "delete-reviews": "node deleteData.js reviews",
+    "delete-users": "node deleteUsers.js users"
+  },
   "type": "module"
 }

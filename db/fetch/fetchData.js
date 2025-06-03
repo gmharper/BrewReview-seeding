@@ -1,7 +1,12 @@
 import { FIRESTORE_DB } from "../../firebaseconfig.js";
 import { collection, getDocs } from "firebase/firestore";
 
-export async function fetchData (type) {
+export async function fetchData () {
+    let type = "beers"
+    if (process.argv[2]) {
+        type = process.argv[2]
+    }
+    
     const dataRef = collection(FIRESTORE_DB, `${type}`);
 
     return getDocs(dataRef)

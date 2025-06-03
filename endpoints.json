@@ -1,0 +1,58 @@
+{   "useful_links": {
+        "GET": "https://firebase.google.com/docs/firestore/query-data/get-data",
+        "ADD": "https://firebase.google.com/docs/firestore/manage-data/add-data",
+        "DELETE": "https://firebase.google.com/docs/firestore/manage-data/delete-data"
+    },
+    "collections": {
+        "beers": {
+            "example_object": {
+                "id": "heineken",
+                "name": "Heineken",
+                "country": "Netherlands",
+                "brewery": "heineken",
+                "img_url": "",
+                "logo_url": "",
+                "alcohol%": 5,
+                "reviews": ["review_id", "review_id"],
+                "rating": 4.3,
+                "votes": 6,
+                "voted_by": ["user_id", "user_id"]
+            }
+        },
+        "breweries": {
+            "example_object": {
+                "id": "",
+                "name": "",
+                "country": "",
+                "founded_date": "",
+                "img_url": "",
+                "logo_url": "",
+                "website": "",
+                "beers": ["beer_id", "beer_id"]
+            }
+        },
+        "categories": {
+            "example_object": {
+                "id": "",
+                "name": "",
+                "beers": ["beer_id", "beer_id"]
+            }
+        },
+        "reviews": {
+            "example_object": {
+                "id": "",
+                "posted_by": "user_id",
+                "title": "",
+                "votes": 17
+
+            }
+        },
+        "users": {
+            "example_object": {
+                "username": "",
+                "name": "",
+                "reviews": ["review_id", "review_id"]
+            }
+        }
+    }
+}

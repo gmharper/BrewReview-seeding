@@ -1,10 +1,6 @@
 import { FIRESTORE_DB } from "../../firebaseconfig.js"
 import { doc, setDoc } from "firebase/firestore"; 
 
-import { beersData, breweriesData, categoriesData, reviewsData, usersData } from "../data/index.js"
-
-import { deleteData } from "../delete/deleteData.js";
-
 let promiseArray = []
 export async function seedData (type, dataArray) {
     // switch (type) {
