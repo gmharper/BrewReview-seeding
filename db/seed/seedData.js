@@ -6,9 +6,8 @@ import { deleteData } from "../delete/deleteData.js";
 import { beersData, breweriesData, categoriesData, reviewsData, usersData } from "../data/index.js";
 
 let promiseArray = []
-let type = "beers"
 let dataArray = [...beersData]
-export const seedData = (type) => {
+export const seedData = (type="beers") => {
         switch (process.argv[2]) {
             case "beers":
                 dataArray = [...beersData]
@@ -28,11 +27,12 @@ export const seedData = (type) => {
         }
     
     (dataArray.forEach((data) => {
-        let idType = "id"
+        let idType = data.id
         if (type === "users") {
-            idType = "username"
+            idType = data.username
         }
-        promiseArray.push(setDoc(doc(FIRESTORE_DB, type, data[idType]), 
+
+        promiseArray.push(setDoc(doc(FIRESTORE_DB, type, idType), 
             {...data}) )
         })
     )

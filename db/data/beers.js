@@ -1,42 +1,63 @@
 export const beersData = [
     {
-        id: "heineken",
-        name: "Heineken",
+        id: "heineken_premium",
+        name: "Heineken Premium Lager",
         country: "Netherlands",
         category: "pale_lager",
         brewery: "heineken",
         logo_url: "",
         img_url: "https://en.wikipedia.org/wiki/Heineken#/media/File:Heineken_Bottle.jpg",
         percentage: 5,
-        reviews: [],
-        voted_by: [],
-        votes: 53
+        tags: [],
+        reviews: ["yellowhops616", "blueale527", "silverstout", "heavybear", "bigdog512", "goldengoose43", "mrlager87"],
     },
     {
-        id: "stella_artois",
-        name: "Stella Artois",
+        id: "stella_artois_premium",
+        name: "Stella Artois Premium Lager",
         country: "Belgium",
         category: "pilsner",
         brewery: "anheuser-busch",
         logo_url: "",
         img_url: "https://en.wikipedia.org/wiki/Stella_Artois#/media/File:Stella_Artois_chalice_filled.jpg",
         percentage: 5.2,
-        reviews: [],
-        voted_by: [],
-        votes: 78
+        tags: [],
+        reviews: ["goldengoose43", "crazyostrich422", "purpletiger691", "blueale527", "whitebrew338", "bofromnorway"],
     },
     {
-        id: "carlsberg",
-        name: "Carlsberg",
+        id: "carlsberg_lager",
+        name: "Carlsberg Danish Pilsner",
         country: "Denmark",
         category: "pilsner",
         brewery: "carlsberg",
         logo_url: "https://1000logos.net/wp-content/uploads/2016/10/Carlsberg-logo.jpg",
         img_url: "https://www.365drinks.co.uk/cdn/shop/files/Carlsberg_a04f2fcb-e173-42e3-8671-502c1a97c373.webp?v=1697222318",
-        percentage: 5,
-        reviews: [],
-        voted_by: [],
-        votes: 55
+        percentage: 3.4,
+        tags: [],
+        reviews: ["mrlager87", "silverstout", "yellowhops616", "bofromnorway", "craftking9"],
+    },
+    {
+        id: "carlsberg_export",
+        name: "Carlsberg Export",
+        country: "Denmark",
+        category: "pilsner",
+        brewery: "carlsberg",
+        logo_url: "https://1000logos.net/wp-content/uploads/2016/10/Carlsberg-logo.jpg",
+        img_url: "https://www.365drinks.co.uk/cdn/shop/files/Carlsberg_a04f2fcb-e173-42e3-8671-502c1a97c373.webp?v=1697222318",
+        percentage: 4.8,
+        tags: [],
+        reviews: ["mrlager87", "bofromnorway", "purpletiger691", "yellowhops616"],
+    },
+    {
+        id: "carlsberg_special_brew",
+        name: "Carlsberg Special Brew",
+        country: "Denmark",
+        category: "lager",
+        brewery: "carlsberg",
+        logo_url: "https://1000logos.net/wp-content/uploads/2016/10/Carlsberg-logo.jpg",
+        img_url: "https://www.365drinks.co.uk/cdn/shop/files/Carlsberg_a04f2fcb-e173-42e3-8671-502c1a97c373.webp?v=1697222318",
+        percentage: 7.5,
+        tags: [],
+        reviews: ["bigdog512", "yellowhops616"],
     },
     {
         id: "punk_ipa",
@@ -47,9 +68,8 @@ export const beersData = [
         logo_url: "",
         img_url: "",
         percentage: 5.4,
-        reviews: [],
-        voted_by: [],
-        votes: 23
+        tags: [],
+        reviews: ["craftking9", "silversnake874", "frothy-mouse680", "bluepilsner", "yellowhops616", "bofromnorway", "purpletiger691", "whitebrew338"],
     },
     {
         id: "neck_oil",
@@ -60,9 +80,8 @@ export const beersData = [
         logo_url: "",
         img_url: "",
         percentage: 4.3,
-        reviews: [],
-        voted_by: [],
-        votes: 23
+        tags: [],
+        reviews: ["bitter_black", "porter296", "frothy-mouse680", "goldengoose43", "blueale527", "ipabear898", "craftking9"],
     },
     {
         id: "double_ghost",
@@ -73,9 +92,8 @@ export const beersData = [
         logo_url: "",
         img_url: "",
         percentage: 5.2,
-        reviews: [],
-        voted_by: [],
-        votes: 15
+        tags: [],
+        reviews: ["silversnake874", "purpletiger691", "craftking9", "bluepilsner", "porter295"],
     },
     {   id: "griffin_gold",
         name: "Griffin Gold",
@@ -85,9 +103,8 @@ export const beersData = [
         logo_url: "",
         img_url: "",
         percentage: 3.4,
-        reviews: [],
-        voted_by: [],
-        votes: 2
+        tags: [],
+        reviews: ["heavybear", "goldengoose43", "silversnake874"],
     },
     {
         id: "biere_de_saison",
@@ -98,9 +115,8 @@ export const beersData = [
         logo_url: "",
         img_url: "",
         percentage: 4.4,
+        tags: [],
         reviews: [],
-        voted_by: [],
-        votes: 0
     },
     {
         id: "cannonball",
@@ -111,9 +127,8 @@ export const beersData = [
         logo_url: "",
         img_url: "",
         percentage: 7.4,
-        reviews: [],
-        voted_by: [],
-        votes: 43
+        tags: [],
+        reviews: ["silverstout", "frothy-mouse680"],
     },
     {
         id: "313_craft",
@@ -124,9 +139,8 @@ export const beersData = [
         logo_url: "",
         img_url: "",
         percentage: 4.6,
-        reviews: [],
-        voted_by: [],
-        votes: 18
+        tags: [],
+        reviews: ["ipabear898", "brewcat108", "silversnake874", "bitter_black", "bluepilsner", "craftking9"],
     },
     {
         id: "sussex_best",
@@ -137,9 +151,8 @@ export const beersData = [
         logo_url: "",
         img_url: "",
         percentage: 4,
-        reviews: [],
-        voted_by: [],
-        votes: 5
+        tags: [],
+        reviews: ["bofromnorway", "mrlager87", "ipabear898"],
     },
     {
         id: "marshmallow_mountain",
@@ -150,9 +163,8 @@ export const beersData = [
         logo_url: "",
         img_url: "",
         percentage: 5.1,
-        reviews: [],
-        voted_by: [],
-        votes: 6
+        tags: [],
+        reviews: ["bigdog512", "porter295", "purpletiger691", "silversnake874"],
     },
     {
         id: "hells",
@@ -163,8 +175,7 @@ export const beersData = [
         logo_url: "",
         img_url: "",
         percentage: 4.6,
-        reviews: [],
-        voted_by: [],
-        votes: 48
+        tags: [],
+        reviews: ["porter295", "bitter_black", "frothymouse680", "goldengoose43", "bluepilsner", "ipabear898", "brewcat108"],
     },
 ]
